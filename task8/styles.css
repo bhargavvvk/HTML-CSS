@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 15px 30px;
+  background-color: #36a2ef;
+}
+
+
+a{
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.form-label {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+}
+.form-label:hover {
+  color: white;
+}
+
+.checkbox {
+  display: none;
+}
+
+.check-container {
+  background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+
+.checkbox:checked + .check-container {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown-contents{
+    display: none;
+    position:absolute;
+    top: 100%;
+    left: -110%;
+}
+
+.dropdown:hover .dropdown-contents{
+    display: block;
+    background-color:#36a2ef;
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 150px;
+}
+
+.link:hover {
+  color: white;
+}
+
+.title{
+    margin: 15px 0 15px 10px;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    gap: 30px;
+    padding: 10px;
+    justify-content: center;
+
+}
+.card {
+    transition: box-shadow 0.3s ease;
+   
+}
+
+.cardimg{
+    width: 100%;
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-container {
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.modal-container:target{
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.modal {
+    background-color: #ffffff;
+    color: #333;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+
+.primary-btn {
+  background-color: #e6f2fb;
+  color: #36a2ef;
+  border: 1px solid #36a2ef;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.secondary-btn {
+  background-color: #e6f2fb;
+  color: #36a2ef;
+  border: 1px solid #36a2ef;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+
+.secondary-btn:hover {
+  background-color: #36a2ef;
+  color: white;
+}
+
+.primary-btn:hover{
+    background-color: #36a2ef;
+    color: white;
+}
+
+.close-btn {
+  background-color:  #e0e0e0;
+  color: #333;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+}
+
+.close-btn:hover {
+  background-color: #f1f1f1;
+}
+
+body:has(.modal-container:target){
+    overflow: hidden;
+}
+
+.FAQ-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.FAQ{
+    width: 60%;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.hide{
+    display: none;
+}
+
+
+.faq-label {
+  color: black;
+  cursor: pointer;
+}
+
+
+.faq-label:hover {
+  color: #36a2ef;
+}
+
+.checkbox:checked + .hide {
+  display: flex;
+}
+
