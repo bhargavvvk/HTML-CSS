@@ -23,12 +23,26 @@
   transition: transform 0.5s ease;
 }
 
+
+
 .img-container {
   display: flex;
   justify-content: center;
     padding: 25px;
-    flex: 0 0 100vw; 
+    flex: 0 0 100%; 
 }
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  33% { transform: translateX(-100vw); }
+  66% { transform: translateX(-200vw); }
+  100% { transform: translateX(0); }
+ }
+
+
+ .strip {
+  animation: slide 9s infinite;
+} 
 
 .dots {
   position: absolute;
@@ -64,10 +78,10 @@
   transform: translateX(0);
 }
 #slide2:checked ~ .strip {
-  transform: translateX(-100vw);
+  transform: translateX(-100%);
 }
 #slide3:checked ~ .strip {
-  transform: translateX(-200vw);
+  transform: translateX(-200%);
 }
 
 .navbar {
@@ -342,3 +356,17 @@ body:has(.modal-container:target){
   display: flex;
 }
 
+
+
+@media (max-width: 900px) {
+  .img{
+    width: 70%;
+  }
+}
+
+@media (max-width: 500px) {
+  .img{
+    width: 100%;
+    height: auto;
+  }
+}
