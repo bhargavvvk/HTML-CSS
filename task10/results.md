@@ -1,12 +1,17 @@
-1) made navbar sticky and implemented side bar 
+1) implemented multi page using css
 
-<img width="1470" height="956" alt="image" src="https://github.com/user-attachments/assets/324bda53-3ca1-4cc5-b219-2057d1424d1d" />
+Home page
+   <img width="1470" height="956" alt="image" src="https://github.com/user-attachments/assets/60517144-208a-41b2-87b3-1928c02a5836" />
+events page
+<img width="1470" height="956" alt="image" src="https://github.com/user-attachments/assets/ff5f6b7e-b24d-42be-868e-0fb410aa86ce" />
 
-2) responsive design for smaller screens like tab and mobile
+Know more page
 
-<img width="880" height="930" alt="image" src="https://github.com/user-attachments/assets/2bcce110-709f-45ac-8145-adb867c2d881" />
+<img width="1470" height="956" alt="image" src="https://github.com/user-attachments/assets/0445ec60-121a-4330-a100-39f154fded49" />
 
-side bar collapses when screen size reduced to mobile layout
+responsive design
 
-<img width="495" height="923" alt="image" src="https://github.com/user-attachments/assets/b8809f19-f7ca-4a36-ac0b-fa501153eaa9" />
+<img width="1470" height="956" alt="image" src="https://github.com/user-attachments/assets/9b1b3c6a-0232-4356-aa91-45f8de70187a" />
 
+
+<img width="1470" height="956" alt="image" src="https://github.com/user-attachments/assets/f309ca9b-608a-4417-afef-dd9ca431e297" />
